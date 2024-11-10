@@ -98,13 +98,6 @@ class ClientWebRTC @Inject constructor(
     private var localVideoTrack: VideoTrack?=null
 
 
-    //переменные экрана
-    private var permissionIntent: Intent?=null
-    private var screenCapturer: VideoCapturer?=null
-    private val localScreenVideoSource by lazy { peerConnectionFactory.createVideoSource(false) }
-    private var localScreenShareVideoTrack:VideoTrack?=null
-
-
     //раздел создания соединения
     init{
         initPeerConnectionFactory()
